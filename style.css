@@ -204,7 +204,10 @@ width: 150px;
   cursor: pointer;
 }
 .contact-section {
-  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 10dvh;
 }
 
 .contact-form {
@@ -214,6 +217,7 @@ width: 150px;
   display: flex;
   flex-direction: column;
   gap: 10px;
+  width:100% ;
 }
 
 .contact-form input,
@@ -238,6 +242,7 @@ width: 150px;
 }
 #bodybg{
     background: url(mom-baby.jpg);
+    background-position: center;
 }
 .Home{
     position: fixed;
@@ -255,14 +260,13 @@ width: 150px;
   }
 #bodymed{
     background: url(icon/mede.jpg);
+     background-position: center;
 }
 #bodycar{
     background-image: url(icon/care.jpg);
+     background-position: center;
 }
-/* ===============================
-   Fieldset Styling + Animation
-   (إضافة آمنة – آخر الملف)
-================================ */
+
 
 fieldset {
   border: 2px solid #6fbf9b;
@@ -275,7 +279,7 @@ fieldset {
   animation: fieldFade 0.9s ease-out;
 }
 
-/* عنوان الفيلدسيت */
+
 legend {
   padding: 0 14px;
   font-size: 16px;
@@ -283,7 +287,7 @@ legend {
   color: #2f6f4e;
 }
 
-/* العناصر داخل الفيلدسيت */
+
 fieldset label {
   display: block;
   margin-bottom: 6px;
@@ -373,4 +377,7 @@ fieldset:hover {
     opacity: 1;
     transform: translateY(0);
   }
+}
+#inbady{
+  background-image: linear-gradient(rgb(43, 75, 43),rgb(155, 211, 155));
 }
