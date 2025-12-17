@@ -259,3 +259,118 @@ width: 150px;
 #bodycar{
     background-image: url(icon/care.jpg);
 }
+/* ===============================
+   Fieldset Styling + Animation
+   (إضافة آمنة – آخر الملف)
+================================ */
+
+fieldset {
+  border: 2px solid #6fbf9b;
+  border-radius: 18px;
+  padding: 22px;
+  margin: 25px 0;
+  background: rgba(255, 255, 255, 0.92);
+
+  /* Animation on load */
+  animation: fieldFade 0.9s ease-out;
+}
+
+/* عنوان الفيلدسيت */
+legend {
+  padding: 0 14px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #2f6f4e;
+}
+
+/* العناصر داخل الفيلدسيت */
+fieldset label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #1f3d2b;
+}
+
+fieldset input,
+fieldset textarea,
+fieldset select {
+  width: 100%;
+  padding: 11px;
+  margin-bottom: 14px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  font-family: Arial;
+  transition: 0.3s;
+}
+
+/* Focus animation */
+fieldset input:focus,
+fieldset textarea:focus,
+fieldset select:focus {
+  outline: none;
+  border-color: #6fbf9b;
+  box-shadow: 0 0 8px rgba(111, 191, 155, 0.5);
+}
+
+/* Hover animation (خفيفة جدًا) */
+fieldset:hover {
+  transform: scale(1.01);
+  transition: 0.3s;
+}
+
+/* Keyframes */
+@keyframes fieldFade {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.product-card button,.footer-btn{
+  transition: 0.3s;
+}
+.product-card button:hover,.footer-btn:hover{
+  transition: translateY(-2px);
+}
+/* ===============================
+   Smooth Reveal Animation
+================================ */
+
+/* أي كرت */
+.category-card,
+.product-card {
+  opacity: 0;
+  animation: reveal 0.8s ease forwards;
+}
+
+/* تأخير بسيط بين العناصر */
+.category-card:nth-child(1),
+.product-card:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.category-card:nth-child(2),
+.product-card:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.category-card:nth-child(3),
+.product-card:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+/* الحركة */
+@keyframes reveal {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -2,7 +2,7 @@
 <html lang="ar">
 <head>
   <meta charset="UTF-8">
-  <title>اتصل بنا | ورق لنعناع</title>
+  <title>تواصل معنا | ورق لنعناع</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -16,14 +16,17 @@
 </header>
 
 <section class="contact-section">
-  <h2>اتصل بنا</h2>
-
+  <h2> تواصل معنا </h2>
+<fieldset>
   <form class="contact-form" onsubmit="sendMessage(); return false;">
-    <input type="text" placeholder="الاسم" required><br><br>
-    <input type="email" placeholder="البريد الإلكتروني" required><br><br>
-    <textarea placeholder="رسالتك" required></textarea><br>
+    <label for="name" >أدخل اسمك</label>
+    <input id="name" type="text" placeholder="الاسم" required><br><br>
+    <label for="mail" >أدخل بريدك الإلكتروني</label>
+    <input id="mail" type="email" placeholder="البريد الإلكتروني" required><br><br>
+    <label for="tex" >كيف يمكننا مساعدتك</label>
+    <textarea id="tex" placeholder="رسالتك" required></textarea><br>
     <button type="submit">إرسال</button>
-  </form>
+  </form></fieldset>
 </section>
 
     <footer class="footer">
